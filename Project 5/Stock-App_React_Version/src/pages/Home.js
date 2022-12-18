@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="bodyDiv">
-      <h1>Home Page</h1>
+      <h1>iStocks Home Page</h1>
       <p>
         This app provides detailed information about companies' stocks. For our
         case, we simplified the detaile to let use create what the desired
