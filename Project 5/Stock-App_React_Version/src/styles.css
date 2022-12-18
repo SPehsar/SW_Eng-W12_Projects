@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .bodyDiv {
+    list-style-type: none;
+    padding: 0 20px;
+  }
+  
+  p {
+    font-weight: 400;
+  }
+  
+  section {
+    width: 600px;
+    list-style-type: none;
+    padding: 0 20px;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+  }
+  
+  nav {
+    background-color: rgb(101,50,203);
+    padding: 5px;
+  }
+  
+  nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav h1 {
+    font-size: 25px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 25px;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background: #6532CB;
+  }
+  
+  nav ul li {
+    display: inline;
+    font-size: 19px;
+    list-style-type: none;
+  }
+  h2 {
+    color:black;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 2em;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+  }
