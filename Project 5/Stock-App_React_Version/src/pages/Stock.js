@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export default function Stock() {
-  const [stock, setStock] = useState(null);
+  const [stock, setStock] = useState({});
   const { symbol } = useParams();
 
   useEffect(() => {
@@ -22,10 +22,26 @@ export default function Stock() {
   const loaded = () => {
     return (
       <div className="bodyDiv">
-        <h2>
-          {stock.name} / {stock.symbol}
-        </h2>
-        <h3>${stock.lastPrice}</h3>
+        <h1>
+          {stock.name}
+        </h1>
+        <h2>( {stock.symbol} )</h2>
+        <table>
+        <tr>
+        <th><h3>Last Price</h3></th>
+        <th><h3>Changed</h3></th>
+        <th><h3>High</h3></th>
+        <th><h3>Low</h3></th>
+        <th><h3>Open</h3></th>
+        </tr>
+        <tr>
+        <th><h3>${stock.lastPrice}</h3></th>
+        <th><h3>${stock.change}</h3></th>
+        <th><h3>${stock.high}</h3></th>
+        <th><h3>${stock.low}</h3></th>
+        <th><h3>${stock.open}</h3></th>
+        </tr>
+        </table>
       </div>
     );
   };
@@ -37,31 +53,3 @@ export default function Stock() {
   return stock && stock.name ? loaded() : loading();
 }
 
-// import React from "react";
-// import { Route, Routes, BrowserRouter } from "react-router-dom";
-// import Home from "./Home";
-// import Dashboard from "./Dashboard";
-// import About from "./About";
-// import Stock from "./Stock";
-// import stockData from "../data";
-
-// function Main(props) {
-//   return (
-//     <main>
-//       <BrowserRouter>
-//         <Route exact path="/" component={Home} />
-//         <Route path="/about" component={About} />
-//         <Route
-//           path="/stocks/:symbol"
-//           render={(props) => <Stock stockData={stockData} {...props} />}
-//         />
-//         <Route
-//           path="/stocks"
-//           render={(props) => <Dashboard {...props} stockData={stockData} />}
-//         />
-//       </BrowserRouter>
-//     </main>
-//   );
-// }
-
-// export default Main;

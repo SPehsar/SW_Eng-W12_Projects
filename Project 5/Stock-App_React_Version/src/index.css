@@ -70,20 +70,21 @@ h2 {
   color:black;
 }
 
-code {
-  font-family: 'Courier New';
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  padding: 15px;
-  font-size: 2em;
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center
 }
 
-.nav a {
-  color: white;
-  text-decoration: none;
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
+
+

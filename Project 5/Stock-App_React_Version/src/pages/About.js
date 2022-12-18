@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="bodyDiv">
-      <h2>About</h2>
+      <h1>About</h1>
       <p>
         This app provides detailed information about companies' stocks. For our
         case, we simplified the detaile to let use create what the desired
