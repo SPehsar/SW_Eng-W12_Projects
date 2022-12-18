@@ -6,36 +6,84 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.App {
-  font-family: sans-serif;
-  text-align: center;
+
+.bodyDiv {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+p {
+  font-weight: 400;
+}
+
+section {
+  width: 600px;
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+nav {
+  background-color: rgb(101,50,203);
+  padding: 5px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav h1 {
+  font-size: 25px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 25px;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background: #6532CB;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 19px;
+  list-style-type: none;
+}
+
+h2 {
+  color:black;
+}
+
+code {
+  font-family: 'Courier New';
 }
 
 .nav {
   display: flex;
-  align-items: center;
-  width: 100vw;
-  height: 50px;
-  padding: 0 20px;
-  background: #6532CB;
-}
-
-.nav > * {
-  padding-right: 20px;
-}
-
-.nav .nav-logo {
-  color: #99CC00;
-  font-weight: bold;
-  font-size: 1.5em;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  font-size: 2em;
 }
 
 .nav a {
-  text-decoration: none;
   color: white;
-  font-weight: bold;
-}
-
-.main {
-  padding: 0 20px;
+  text-decoration: none;
 }
