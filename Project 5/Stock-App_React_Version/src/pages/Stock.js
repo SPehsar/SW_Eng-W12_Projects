@@ -78,6 +78,7 @@ export default function Stock(props) {
         </div>
         <br /><br /><br />
         <hr />
+        <br />
       </>
     );
   };
